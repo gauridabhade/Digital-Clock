@@ -1,18 +1,2 @@
 # Digital-Clock
-import tkinter as tk
-from time import strftime
-
-root = tk.Tk()
-root.title("Digital Clock")
-
-def time():
-    string = strftime('%D %A \n %H:%M:%S %p')
-    label.config(text=string)
-    label.after(1000,time)
-
-label = tk.Label(root,font=('calibri',50,'bold'),background='pink',foreground='black')
-label.pack(anchor='center')
-
-time()
-
-root.mainloop()
+This project is a simple Digital Clock that displays the current time in hours, minutes, and seconds. It updates automatically every second and is easy to use and understand
